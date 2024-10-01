@@ -1,0 +1,63 @@
+.App {
+    text-align: center;
+    background-color: rgba(84, 11, 49, 0.3);
+    padding-top: 5%;
+}
+
+.highlight {
+  color: #FF0000;
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.success-message {
+  color: green;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.mainBox {
+  margin: 1rem;
+  width:  100vw;
+
+  height: 95vh;
+}
+
+.mainBox header {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.mainBox button {
+    background-color: #6a0dad; /* Purple color */
+    color: white;              /* Text color */
+    border: none;              /* Remove border */
+    border-radius: 50px;       /* Fully rounded corners */
+    padding: 10px 20px;        /* Adjust padding for size */
+    font-size: 16px;           /* Text size */
+    cursor: pointer;           /* Pointer cursor on hover */
+    text-align: center;        /* Center text */
+    display: inline-block;     /* Keep it inline with other elements */
+    transition: background-color 0.3s ease; /* Smooth background change */
+    width: auto;
+    flex-shrink: 0;
+    align-self: center;
+    margin-left: 0.5rem;
+}
+
+.mainBox button:hover {
+  background-color: #4b0082; /* Darker purple on hover */
+}
+
+
+.mainBox h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}

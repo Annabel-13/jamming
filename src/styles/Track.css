@@ -1,0 +1,19 @@
+.Track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.Track-information {
+    text-align: left;
+}
+
+.Track-action {
+    padding: 10px;
+    background-color: #1DB954;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,4 @@
+.Tracklist {
+    display: flex;
+    flex-direction: column;
+}
