@@ -1,6 +1,4 @@
-Here's a basic README template for your project. You can customize it according to your project specifics:
 
----
 
 # Jammming
 
