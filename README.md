@@ -52,5 +52,5 @@ To use this project with your own Spotify account, follow these steps:
 - **Remove from Playlist**: Click the "-" button to remove a song from the playlist.
 - **Save Playlist**: After creating your playlist, click the "SAVE TO SPOTIFY" button to save it to your Spotify account.
 Here is an example of an interface for this app:
-![alt text](https://github.com/Annabel-13/jamming/screenshots/jamming1.png)
-![alt text](https://github.com/Annabel-13/jamming/screenshots/jamming2.png)
+![alt text]([https://github.com/Annabel-13/jamming/screenshots/jamming1.png](https://github.com/Annabel-13/jamming/blob/main/screenshots/jamming1.png))
+![alt text]([https://github.com/Annabel-13/jamming/screenshots/jamming2.png](https://github.com/Annabel-13/jamming/blob/main/screenshots/jamming2.png))
