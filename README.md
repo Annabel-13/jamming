@@ -51,3 +51,5 @@ To use this project with your own Spotify account, follow these steps:
 - **Add to Playlist**: Click the "+" button to add a song to your playlist.
 - **Remove from Playlist**: Click the "-" button to remove a song from the playlist.
 - **Save Playlist**: After creating your playlist, click the "SAVE TO SPOTIFY" button to save it to your Spotify account.
+Here is an example of an interface for this app:
+![alt text](https://github.com/Annabel-13/jamming/screenshots/jam1.png)
