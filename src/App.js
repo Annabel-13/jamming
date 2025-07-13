@@ -16,7 +16,7 @@ function App() {
   const [playlistName, setPlaylistName] = useState('');
   const [userName, setUserName] = useState('');
   const [userId, setUserId] = useState('');
-  const [error, setError] = useState('');
+  // const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState(''); // State for success message
 
   const addTrack = (track) => {
