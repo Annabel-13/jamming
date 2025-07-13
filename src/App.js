@@ -168,7 +168,7 @@ function App() {
         return data.access_token;
       } catch (error) {
         console.error('Error exchanging code for access token:', error);
-        setError('Failed to get access token');
+        // setError('Failed to get access token');
       }
     };
 
@@ -189,7 +189,7 @@ function App() {
         return await response.json();
       } catch (error) {
         console.error('Error fetching user profile:', error);
-        setError('Failed to fetch user profile');
+        // setError('Failed to fetch user profile');
       }
     };
 
