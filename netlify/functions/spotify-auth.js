@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 
 exports.handler = async (event) => {
     const { code, redirectUri } = JSON.parse(event.body);
