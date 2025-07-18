@@ -145,55 +145,55 @@ function App() {
     const code = params.get('code');
 
     /*common version of fetch function for connect with Spotify*/
-    // const exchangeCodeForAccessToken = async (code) => {
-    //   try {
-    //     const response = await fetch('https://accounts.spotify.com/api/token', {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/x-www-form-urlencoded',
-    //       },
-    //       body: new URLSearchParams({
-    //         grant_type: 'authorization_code',
-    //         code: code,
-    //         redirect_uri: redirectUri,
-    //         client_id: clientId,
-    //         client_secret: clientSecret,
-    //       }),
-    //     });
-    //
-    //     if (!response.ok) {
-    //       throw new Error(`HTTP error! status: ${response.status}`);
-    //     }
-    //
-    //     const data = await response.json();
-    //     return data.access_token;
-    //   } catch (error) {
-    //     console.error('Error exchanging code for access token:', error);
-    //     // setError('Failed to get access token');
-    //   }
-    // };
-
     const exchangeCodeForAccessToken = async (code) => {
       try {
-        const response = await fetch('/.netlify/functions/spotify-auth', {
+        const response = await fetch('https://accounts.spotify.com/api/token', {
           method: 'POST',
-          body: JSON.stringify({
-            code,
-            redirectUri,
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams({
+            grant_type: 'authorization_code',
+            code: code,
+            redirect_uri: redirectUri,
+            client_id: clientId,
+            client_secret: clientSecret,
           }),
         });
 
-        const data = await response.json();
-
-        if (data.access_token) {
-          return data.access_token;
-        } else {
-          throw new Error('No access token in response');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
+
+        const data = await response.json();
+        return data.access_token;
       } catch (error) {
         console.error('Error exchanging code for access token:', error);
+        // setError('Failed to get access token');
       }
     };
+
+    // const exchangeCodeForAccessToken = async (code) => {
+    //   try {
+    //     const response = await fetch('/.netlify/functions/spotify-auth', {
+    //       method: 'POST',
+    //       body: JSON.stringify({
+    //         code,
+    //         redirectUri,
+    //       }),
+    //     });
+    //
+    //     const data = await response.json();
+    //
+    //     if (data.access_token) {
+    //       return data.access_token;
+    //     } else {
+    //       throw new Error('No access token in response');
+    //     }
+    //   } catch (error) {
+    //     console.error('Error exchanging code for access token:', error);
+    //   }
+    // };
 
 
     const getUserProfile = async (token) => {
