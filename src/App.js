@@ -5,7 +5,7 @@ import Playlist from './components/Playlist';
 import './styles/App.css';
 
 const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID; // Your Spotify Client ID
-const clientSecret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET; // Your Spotify Client Secret
+// const clientSecret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET; // Your Spotify Client Secret
 const redirectUri = 'http://localhost:3000/'; // Your redirect URI
 const scopes = 'user-read-private user-read-email playlist-modify-public playlist-modify-private';
 
