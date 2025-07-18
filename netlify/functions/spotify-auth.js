@@ -3,8 +3,8 @@
 exports.handler = async (event) => {
     const { code, redirectUri } = JSON.parse(event.body);
 
-    const client_id = process.env.SPOTIFY_CLIENT_ID;
-    const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
+    const client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+    const client_secret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
 
     const basicAuth = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 
