@@ -7,8 +7,8 @@
     width: 50%;
     padding: 10px;
     font-size: 1.2rem;
-    /*color: gray;*/
     border: 1px black solid;
+    border-radius: 1rem;
 }
 
 .Playlist-save {

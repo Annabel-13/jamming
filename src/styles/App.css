@@ -2,6 +2,7 @@
     text-align: center;
     background-color: rgba(84, 11, 49, 0.3);
     padding-top: 5%;
+    margin: 3%;
 }
 
 .highlight {
@@ -20,9 +21,7 @@
 }
 
 .mainBox {
-  margin: 1rem;
   width:  100vw;
-
   height: 95vh;
 }
 
