@@ -17,3 +17,19 @@
     color: white;
     cursor: pointer;
 }
+
+/*mobile view*/
+@media (max-width: 400px) {
+
+    .Track {
+        display: grid;
+        padding: 1rem 10%;
+    }
+
+    .Track-action {
+        width: 70%;
+        padding: 12px;
+        font-size: 18px;
+        margin: 0.5rem auto;
+    }
+}
