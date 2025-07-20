@@ -18,3 +18,26 @@
     color: white;
     cursor: pointer;
 }
+
+/*mobile view*/
+@media (max-width: 400px) {
+    .SearchBar {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .SearchBar input {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .SearchButton {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}

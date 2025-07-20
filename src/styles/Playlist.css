@@ -20,3 +20,27 @@
     font-size: 1.2rem;
     cursor: pointer;
 }
+
+
+/*mobile view*/
+@media (max-width: 400px) {
+    .Playlist {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .Playlist input {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .Playlist-save {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
