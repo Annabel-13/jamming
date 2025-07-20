@@ -1,3 +1,11 @@
 .SearchResults {
     width: 45%;
 }
+
+
+/*mobile view*/
+@media (max-width: 400px) {
+    .SearchResults {
+        margin: 0 auto;
+    }
+}
